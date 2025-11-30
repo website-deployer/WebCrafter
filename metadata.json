@@ -1,0 +1,5 @@
+{
+  "name": "WebCrafter AI",
+  "description": "An AI-powered web design tool that generates and refines complete websites from simple text prompts, featuring a live preview, code editor, and drag-and-drop components.",
+  "requestFramePermissions": []
+}
