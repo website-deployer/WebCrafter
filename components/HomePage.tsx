@@ -150,7 +150,6 @@ const HomePage: React.FC<HomePageProps> = ({ onStart, onDemo, onResume }) => {
       <div className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto py-12">
-            <img src="/webcrafter-logo.png" alt="WebCrafter" className="w-16 h-16 mx-auto mb-6" />
             <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-indigo-100 text-indigo-800 text-sm font-medium">
               ✨ Create Beautiful Websites Instantly
             </div>

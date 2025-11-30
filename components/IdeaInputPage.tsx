@@ -88,7 +88,6 @@ const IdeaInputPage: React.FC<IdeaInputPageProps> = ({ onGenerate, onBack, onSel
         &larr; Back to Home
       </button>
       <div className="w-full max-w-6xl mx-auto text-center flex-1 flex flex-col justify-center relative">
-        <img src="/webcrafter-logo.png" alt="WebCrafter" className="w-12 h-12 mx-auto mb-6" />
         <div className="absolute top-0 right-0">
         <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-100 text-[var(--text-muted)] transition-colors" aria-label="Toggle theme">
           {theme === 'dark' ? (
