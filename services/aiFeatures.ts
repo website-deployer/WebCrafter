@@ -44,12 +44,14 @@ User Request: ${prompt}
 
 You MUST return a strictly valid JSON object with this exact structure:
 {
-  "html": "Complete HTML code with head, body, and all content",
+  "html": "Complete HTML code with head, body, and all content. Use only inline styles and scripts, no external file references.",
   "css": "Complete CSS code for styling the page",
   "js": "Complete JavaScript code for interactivity"
 }
 
-Make the website impressive and fully functional along with atleast one feature or functionality that matches the user's prompt.`;
+Make the website impressive and fully functional along with atleast one feature or functionality that matches the user's prompt.
+
+IMPORTANT: Do not include any external CSS or JS file references (like href="index.css" or src="index.js"). All styles and scripts must be inline or embedded directly in the HTML.`;
 
   try {
     console.log('Making API request with available models:', FREE_MODELS.length);

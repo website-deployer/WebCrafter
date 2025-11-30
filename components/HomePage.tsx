@@ -123,7 +123,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStart, onDemo, onResume }) => {
       <nav className="w-full shadow-sm py-4 px-6 bg-transparent">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center font-bold text-white text-xl">W</div>
+            <img src="/webcrafter-logo.png" alt="WebCrafter" className="w-8 h-8" />
             <span className="font-bold text-xl tracking-tight text-[var(--text-main)]">WebCrafter</span>
           </div>
           {/* spacer to balance flex */}
@@ -150,6 +150,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStart, onDemo, onResume }) => {
       <div className="py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto py-12">
+            <img src="/webcrafter-logo.png" alt="WebCrafter" className="w-16 h-16 mx-auto mb-6" />
             <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-indigo-100 text-indigo-800 text-sm font-medium">
               ✨ Create Beautiful Websites Instantly
             </div>

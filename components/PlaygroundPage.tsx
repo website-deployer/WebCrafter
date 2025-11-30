@@ -653,6 +653,7 @@ const PlaygroundPage: React.FC<PlaygroundPageProps> = ({ initialPrompt, initialC
               </svg>
             </button>
 
+            <img src="/webcrafter-logo.png" alt="WebCrafter" className="w-6 h-6 hidden sm:block" />
             <h1 className="text-lg md:text-xl font-bold text-[var(--accent-color)] hidden sm:block">WebCrafter</h1>
             <h1 className="text-lg font-bold text-[var(--accent-color)] sm:hidden">WebCrafter</h1>
 

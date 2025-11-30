@@ -23,11 +23,19 @@ const Preview: React.FC<PreviewProps> = ({ html, css, js }) => {
       bodyContent = afterHead !== -1 ? html.substring(afterHead + 7) : html;
     }
 
+    // Remove external CSS/JS links that would cause 404 errors
+    const cleanHeadContent = headContent
+      .replace(/<link[^>]*\.css[^>]*>/gi, '') // Remove external CSS links
+      .replace(/<script[^>]*src[^>]*\.js[^>]*><\/script>/gi, '') // Remove external JS scripts
+      .replace(/<script[^>]*src=["'][^"']*\.js["'][^>]*>/gi, ''); // Remove external JS script tags
+
     return `
       <!DOCTYPE html>
       <html>
         <head>
-          ${headContent}
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          ${cleanHeadContent}
           <style>
             /* Reset and base styles for preview */
             * { box-sizing: border-box; }
