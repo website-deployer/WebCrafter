@@ -236,7 +236,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStart, onDemo, onResume }) => {
       <footer className="py-8">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center text-[var(--text-muted)] text-sm">
-            © {new Date().getFullYear()} WebCrafter. All rights reserved.
+            © {new Date().getFullYear()} WebCrafter. All rights reserved. By Abhinav Mishra
           </div>
         </div>
       </footer>
