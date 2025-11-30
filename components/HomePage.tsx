@@ -123,7 +123,7 @@ const HomePage: React.FC<HomePageProps> = ({ onStart, onDemo, onResume }) => {
       <nav className="w-full shadow-sm py-4 px-6 bg-transparent">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <img src="/webcrafter-logo.png" alt="WebCrafter" className="w-8 h-8" />
+            <img src="/webcrafter-logo.png" alt="WebCrafter" className="w-8 h-8" style={{ borderRadius: '12px' }} />
             <span className="font-bold text-xl tracking-tight text-[var(--text-main)]">WebCrafter</span>
           </div>
           {/* spacer to balance flex */}
